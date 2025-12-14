@@ -12,12 +12,23 @@ This repository demonstrates:
 
 ## Development
 
-Install dependencies with uv:
+Using just (recommended):
 ```bash
-uv pip install -e ".[dev]"
+# Install dependencies
+just install
+
+# Run mypy type checking
+just mypy
+
+# Install dependencies and run mypy
+just check
 ```
 
-Run mypy:
+Or manually with uv:
 ```bash
+# Install dependencies
+uv pip install -e ".[dev]"
+
+# Run mypy
 mypy .
 ```
