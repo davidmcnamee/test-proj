@@ -1,0 +1,17 @@
+[project]
+name = "test-proj"
+version = "0.1.0"
+description = "Test project with required reviews"
+requires-python = ">=3.8"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "mypy>=1.0.0",
+]
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
